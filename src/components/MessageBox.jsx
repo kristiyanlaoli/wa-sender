@@ -1,17 +1,15 @@
 import { useState, useEffect, useContext } from "react";
 import { MyContext } from "/src/MyContext.js";
 let MessageBox = () => {
-  const { setMessageValue } = useContext(MyContext);
-
   const [inputValue, setInputValue] = useState("");
-
-  useEffect(() => {
-    setMessageValue(inputValue);
-  }, [inputValue]);
-
   const handleChange = (event) => {
     setInputValue(event.target.value);
   };
+
+  const { setMessageValue } = useContext(MyContext);
+  useEffect(() => {
+    setMessageValue(inputValue);
+  }, [inputValue, setMessageValue]);
 
   return (
     <div className="w-[210px] mx-auto mt-6">

@@ -4,16 +4,16 @@ import { PhoneInput } from "react-international-phone";
 import "react-international-phone/style.css";
 
 const InputNumber = () => {
-  const { setNumber } = useContext(MyContext);
-
   const [phone, setPhone] = useState("");
+
+  const { setNumber } = useContext(MyContext);
   useEffect(() => {
     if (phone[3] == 0) {
       setNumber(phone.slice(1, 3) + phone.slice(4, phone.length));
     } else {
       setNumber(phone.slice(1, phone.length));
     }
-  }, [phone]);
+  }, [phone, setNumber]);
 
   return (
     <div className="bg-slate-300 w-[210px] mx-auto">
