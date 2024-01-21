@@ -9,11 +9,11 @@ let SentButton = () => {
   };
 
   return (
-    <>
-      <button className="bg-green-400 p-2" onClick={handleButtonClick}>
+    <div className="text-center my-8">
+      <button className="font-bold text-white rounded-xl bg-green-400 shadow-lg hover:bg-green-600 p-2" onClick={handleButtonClick}>
         Sent
       </button>
-    </>
+    </div>
   );
 };
 export default SentButton;

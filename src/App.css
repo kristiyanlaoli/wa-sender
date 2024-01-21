@@ -5,3 +5,13 @@
 body {
   background-color: #cbd5e1;
 }
+
+textarea {
+  border-radius: 7px;
+  padding: 8px;
+  font-size: 14px;
+  width: 210px;
+  height: 150px; /* Set an initial width */
+  resize: both; /* Allow resizing both horizontally and vertically */
+  overflow: hidden; /* Hide content that exceeds the width */
+}
