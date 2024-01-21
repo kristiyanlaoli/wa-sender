@@ -5,6 +5,7 @@ import InputNumber from "./components/InputNumber";
 import MessageBox from "./components/MessageBox";
 import SentButton from "./components/SentButtom";
 import { MyContext } from "./MyContext.js";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   const [number, setNumber] = useState("");
@@ -19,6 +20,7 @@ function App() {
         <MessageBox />
 
         <SentButton />
+        <Footer />
       </MyContext.Provider>
     </>
   );
