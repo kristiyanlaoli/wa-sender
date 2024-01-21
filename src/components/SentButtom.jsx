@@ -1,6 +1,10 @@
+import { useContext } from "react";
+import { MyContext } from "/src/MyContext";
 let SentButton = () => {
+  const { number, messageValue } = useContext(MyContext);
+
   const handleButtonClick = () => {
-    const link = "https://wa.me/6282224070839?text=";
+    const link = `https://wa.me/${number}?text=${messageValue}`;
     window.open(link, "_blank");
   };
 
