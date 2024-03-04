@@ -15,3 +15,13 @@ textarea {
   resize: both; /* Allow resizing both horizontally and vertically */
   overflow: hidden; /* Hide content that exceeds the width */
 }
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto;
+}

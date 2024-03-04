@@ -12,16 +12,18 @@ function App() {
   const [messageValue, setMessageValue] = useState("");
   return (
     <>
-      <MyContext.Provider
-        value={{ number, setNumber, messageValue, setMessageValue }}
-      >
-        <Header />
-        <InputNumber />
-        <MessageBox />
+      <div className="App">
+        <MyContext.Provider
+          value={{ number, setNumber, messageValue, setMessageValue }}
+        >
+          <Header />
+          <InputNumber />
+          <MessageBox />
 
-        <SentButton />
-        <Footer />
-      </MyContext.Provider>
+          <SentButton />
+          <Footer />
+        </MyContext.Provider>
+      </div>
     </>
   );
 }
